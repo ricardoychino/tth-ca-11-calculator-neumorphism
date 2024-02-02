@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Calculator - Team Treehouse Adv</title>
+
+    <!-- Normalize -->
+    <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Style -->
+    <!-- <link href="src/css/row-flex.css" rel="stylesheet" type="text/css" /> -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <!--[if lt IE 9]>
+      <script src="src/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <main class="dark-mode">
+      <div id="calculator">
+        <!-- Display -->
+        <pre id="display">0</pre>
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <!-- AC -->
+          <div id="ac-button">
+            <button type="button">AC</button>
+          </div>
+          <!-- Operation -->
+          <div id="op-buttons">
+            <button type="button" class="op-btn" data-value="div">&divide;</button>
+            <button type="button" class="op-btn" data-value="mul">&times;</button>
+            <button type="button" class="op-btn" data-value="sub">&minus;</button>
+            <button type="button" class="op-btn" data-value="sum">&plus;</button>
+            <button type="button" class="op-btn" data-value="res">&equals;</button>
+          </div>
+          <!-- Inputs -->
+          <div id="val-buttons">
+            <button type="button" class="val-btn" data-value="dot">.</button>
+            <button type="button" class="val-btn" data-value="0">0</button>
+            <button type="button" class="val-btn" data-value="1">1</button>
+            <button type="button" class="val-btn" data-value="2">2</button>
+            <button type="button" class="val-btn" data-value="3">3</button>
+            <button type="button" class="val-btn" data-value="4">4</button>
+            <button type="button" class="val-btn" data-value="5">5</button>
+            <button type="button" class="val-btn" data-value="6">6</button>
+            <button type="button" class="val-btn" data-value="7">7</button>
+            <button type="button" class="val-btn" data-value="8">8</button>
+            <button type="button" class="val-btn" data-value="9">9</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="custom">
+      <section class="layout">
+        <span class="layout-preview" data-value="light">&nbsp;</span>
+        <span class="layout-preview" data-value="dark">&nbsp;</span>
+      </section>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
